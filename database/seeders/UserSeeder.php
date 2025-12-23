@@ -16,9 +16,9 @@ class UserSeeder extends Seeder
         $orangTuaRole = Role::where('name', 'orang_tua')->first();
 
         // Admin
-        User::create([
+        // Admin
+        User::firstOrCreate(['email' => 'admin@bimbel.com'], [
             'username' => 'admin',
-            'email' => 'admin@bimbel.com',
             'password' => Hash::make('password'),
             'nama_lengkap' => 'Administrator',
             'no_telepon' => '081234567890',
@@ -27,9 +27,8 @@ class UserSeeder extends Seeder
         ]);
 
         // Guru 1
-        User::create([
+        User::firstOrCreate(['email' => 'guru1@bimbel.com'], [
             'username' => 'guru1',
-            'email' => 'guru1@bimbel.com',
             'password' => Hash::make('password'),
             'nama_lengkap' => 'Ahmad Syahputra',
             'no_telepon' => '081234567891',
@@ -38,9 +37,8 @@ class UserSeeder extends Seeder
         ]);
 
         // Guru 2
-        User::create([
+        User::firstOrCreate(['email' => 'guru2@bimbel.com'], [
             'username' => 'guru2',
-            'email' => 'guru2@bimbel.com',
             'password' => Hash::make('password'),
             'nama_lengkap' => 'Siti Nurhaliza',
             'no_telepon' => '081234567892',
@@ -49,9 +47,8 @@ class UserSeeder extends Seeder
         ]);
 
         // Orang Tua 1
-        User::create([
+        User::firstOrCreate(['email' => 'orangtua1@gmail.com'], [
             'username' => 'orangtua1',
-            'email' => 'orangtua1@gmail.com',
             'password' => Hash::make('password'),
             'nama_lengkap' => 'Budi Santoso',
             'no_telepon' => '081234567893',
@@ -60,9 +57,8 @@ class UserSeeder extends Seeder
         ]);
 
         // Orang Tua 2
-        User::create([
+        User::firstOrCreate(['email' => 'orangtua2@gmail.com'], [
             'username' => 'orangtua2',
-            'email' => 'orangtua2@gmail.com',
             'password' => Hash::make('password'),
             'nama_lengkap' => 'Dewi Kusuma',
             'no_telepon' => '081234567894',
