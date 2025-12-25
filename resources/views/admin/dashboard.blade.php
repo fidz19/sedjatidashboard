@@ -34,36 +34,64 @@
 
 @section('content')
     <h2 class="mt-4">Dashboard Admin</h2>
-    <div class="row mt-4">
+    <div class="row mt-4 g-4">
         <div class="col-md-3">
-            <div class="card text-white" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
-                <div class="card-body">
-                    <h5>Total Guru</h5>
-                    <h2>{{ $totalGuru }}</h2>
+            <div class="card card-premium bg-gradient-emerald h-100">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h5>Total Guru</h5>
+                            <h2>{{ $totalGuru }}</h2>
+                        </div>
+                        <div class="bg-white bg-opacity-25 rounded-circle p-2">
+                            <i class="bi bi-person-workspace fs-4"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card text-white" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);">
-                <div class="card-body">
-                    <h5>Total Orang Tua</h5>
-                    <h2>{{ $totalOrangTua }}</h2>
+            <div class="card card-premium bg-gradient-blue h-100">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h5>Total Orang Tua</h5>
+                            <h2>{{ $totalOrangTua }}</h2>
+                        </div>
+                        <div class="bg-white bg-opacity-25 rounded-circle p-2">
+                            <i class="bi bi-people-fill fs-4"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card text-white" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
-                <div class="card-body">
-                    <h5>Total Siswa</h5>
-                    <h2>{{ $totalSiswa }}</h2>
+            <div class="card card-premium bg-gradient-purple h-100">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h5>Total Siswa</h5>
+                            <h2>{{ $totalSiswa }}</h2>
+                        </div>
+                        <div class="bg-white bg-opacity-25 rounded-circle p-2">
+                            <i class="bi bi-mortarboard-fill fs-4"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card text-white" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
-                <div class="card-body">
-                    <h5>Total Game</h5>
-                    <h2>{{ $totalGame }}</h2>
+            <div class="card card-premium bg-gradient-orange h-100">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h5>Total Game</h5>
+                            <h2>{{ $totalGame }}</h2>
+                        </div>
+                        <div class="bg-white bg-opacity-25 rounded-circle p-2">
+                            <i class="bi bi-controller fs-4"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
